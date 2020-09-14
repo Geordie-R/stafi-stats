@@ -8,6 +8,10 @@
 #╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚══════╝
 #######################################################
 
+sudo apt update
+#Install JQ to read JSON
+sudo apt-get install jq
+
 create_dir="$HOME/stafi-stats"
 config_file="$create_dir/config.ini"
 not_setup=0
