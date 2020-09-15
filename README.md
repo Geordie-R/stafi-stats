@@ -62,3 +62,14 @@ sudo wget https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/stats.s
 sudo chmod +x stats.sh
 ```
 <br>
+## Step 4: Test Telegram
+
+Test that your telegram bot is setup correctly by running the following
+
+```
+sudo wget https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/telegramtest.sh
+sudo chmod +x telegramtest.sh
+./telegramtest.sh
+```
+
+
