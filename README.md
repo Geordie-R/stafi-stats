@@ -39,23 +39,14 @@ Once your bot is created, you can set a custom name, profile photo and descripti
 * Change the description and send it to BotFather.
 
 For a full list of command type /help
-<br>
 
 ***
-
-<br>
 
 ## Step 2: Obtain Your Chat Identification Number
 
-<br>
-
 Visit my dedicated telegram bot here [**@StafiChatIDBot**](https://t.me/StafiChatIDBot) for collecting your Chat ID that you will be asked for when you run installstats.sh in Step X.
 
-<br>
-
 ***
-
-<br>
 
 ## Step 3: Download & Setup The Scripts Required For Stafi Stats
 
