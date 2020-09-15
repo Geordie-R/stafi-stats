@@ -55,11 +55,6 @@ Visit my dedicated telegram bot here [**@StafiChatIDBot**](https://t.me/StafiCha
 <br>
 
 ```
-sudo wget https://github.com/remblock/REMChain-Automated-Bot/raw/master/remchain-setup && sudo chmod u+x remchain-setup && sudo ./remchain-setup
-```
-<br>
-
-```
 cd~ && sudo wget https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/installstats.sh && sudo chmod +x installstats.sh && sudo ./installstats.sh
 ```
 <br>
