@@ -53,9 +53,12 @@ cd ~
 mkdir stafi-stats
 cd stafi-stats
 sudo wget https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/installstats.sh
-sudo chmod +x installstats.sh && sudo /installstats.sh
+sudo chmod +x installstats.sh
+sudo ./installstats.sh
+
 ```
 ```
-sudo wget https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/stats.sh && sudo chmod +x stats.sh
+sudo wget https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/stats.sh
+sudo chmod +x stats.sh
 ```
 <br>
