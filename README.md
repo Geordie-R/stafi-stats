@@ -40,13 +40,9 @@ Once your bot is created, you can set a custom name, profile photo and descripti
 
 For a full list of command type /help
 
-***
-
 ## Step 2: Obtain Your Chat Identification Number
 
 Visit my dedicated telegram bot here [**@StafiChatIDBot**](https://t.me/StafiChatIDBot) for collecting your Chat ID that you will be asked for when you run installstats.sh in Step X.
-
-***
 
 ## Step 3: Download & Setup The Scripts Required For Stafi Stats
 
