@@ -82,7 +82,9 @@ sudo chmod +x telegramtest.sh
 
 To test the alerts system why not modify the config and set the alerts metrics to say 5 for the disk or cpu to almost guarantee it will alert you.  To do so
 
+```
 sudo nano ~/stafi-stats/config.ini
+```
 
 Once you have made the changes press Ctrl + X and then press Y to save.
 
