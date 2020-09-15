@@ -1,10 +1,65 @@
 # stafi-stats beta
 Stafi Stats is a script to produce node stats for the Stafi protocol By GeordieR node.
 
-## Step1
+## Step 1: Create Telegram Bot Using Botfather
 
+#### The following steps describe how to create a new bot:
 
+* Contact [**@BotFather**](https://telegram.me/BotFather) in your Telegram messenger.
+* To get a bot token, send BotFather a message that says **`/newbot`**.
+* When asked for a name for your new bot choose something that ends with the word bot, so for example YOUR_NODE_NAMEbot.
+* If your chosen name is available, BotFather will then send you a token.
+* Save this token as you will be asked for it once you execute the installstats.sh script.
+
+Once your bot is created, you can set a custom name, profile photo and description for it. The description is basically a message that explains what the bot can do.
+
+#### To set the Bot name in BotFather do the following:
+
+* Send **`/setname`** to BotFather.
+* Select the bot which you want to change.
+* Send the new name to BotFather.
+
+#### To set a Profile photo for your bot in BotFather do the following:
+
+* Send **`/setuserpic`** to BotFather.
+* Select the bot that you want the profile photo changed on.
+* Send the photo to BotFather.
+
+#### To set Description for your bot in BotFather do the following:
+
+* Send **`/setdescription`** to BotFather.
+* Select the bot for which you are writing a description.
+* Change the description and send it to BotFather.
+
+For a full list of command type /help
+<br>
+
+***
+
+<br>
+
+## Step 2: Obtain Your Chat Idenification Number
+
+<br>
+
+Visit my dedicated telegram bot here [**@StafiChatIDBot**](https://t.me/StafiChatIDBot) for collecting your Chat ID that you will be asked for when you run installstats.sh in Step X.
+
+<br>
+
+***
+
+<br>
+
+## Step 3: Download & Setup The Scripts Required For Stafi Stats
+
+<br>
 
 ```
-cd~ && wget https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/installstats.sh && chmod +x installstats.sh && ./installstats.sh
+sudo wget https://github.com/remblock/REMChain-Automated-Bot/raw/master/remchain-setup && sudo chmod u+x remchain-setup && sudo ./remchain-setup
 ```
+<br>
+
+```
+cd~ && sudo wget https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/installstats.sh && sudo chmod +x installstats.sh && sudo ./installstats.sh
+```
+<br>
