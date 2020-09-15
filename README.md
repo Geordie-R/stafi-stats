@@ -56,7 +56,7 @@ mkdir stafi-stats
 cd stafi-stats
 sudo wget https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/installstats.sh
 sudo chmod +x installstats.sh
-sudo ./installstats.sh
+./installstats.sh
 
 ```
 
@@ -75,7 +75,7 @@ Test that your telegram bot is setup correctly by running the following
 ```
 sudo wget https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/telegramtest.sh
 sudo chmod +x telegramtest.sh
-sudo ./telegramtest.sh
+./telegramtest.sh
 ```
 
 ## Step 5: Test Alerts
