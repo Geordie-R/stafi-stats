@@ -1,5 +1,12 @@
 # stafi-stats beta
-Stafi Stats is a script to produce node stats for the Stafi protocol By GeordieR node.
+Stafi Stats is a script to produce node stats for the Stafi protocol By GeordieR node. Every 5 minutes your node will run stats.sh script which will collect metrics and message you when there is something that needs attention
+## Features
+* Memory Used Percentage
+* Disk Space Used Percentage
+* CPU Utilization Percentage
+* Node Peer Count and isSyncing Check
+* Stafi Block Height VS Your Block Height
+* Stafi System Version VS Your System Version
 
 ## Step 1: Create Telegram Bot Using Botfather
 
@@ -38,7 +45,7 @@ For a full list of command type /help
 
 <br>
 
-## Step 2: Obtain Your Chat Idenification Number
+## Step 2: Obtain Your Chat Identification Number
 
 <br>
 
