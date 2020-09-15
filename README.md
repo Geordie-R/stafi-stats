@@ -76,7 +76,7 @@ sudo chmod +x telegramtest.sh
 sudo ./telegramtest.sh
 ```
 
-## Step 5
+## Step 5: Test Alerts
 
 To test the alerts system why not modify the config and set the alerts metrics to say 5 for the disk or cpu to almost guarantee it will alert you.  To do so
 
