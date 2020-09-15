@@ -10,6 +10,8 @@ Stafi Stats is a script to produce node stats for the Stafi protocol. Every 5 mi
 
 ## Step 1: Create Telegram Bot Using Botfather
 
+In order to message you on telegram, we will create a telegram bot which you control the bot token for.
+
 #### The following steps describe how to create a new bot:
 
 * Contact [**@BotFather**](https://telegram.me/BotFather) in your Telegram messenger.
