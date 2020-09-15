@@ -49,6 +49,6 @@ Visit my dedicated telegram bot here [**@StafiChatIDBot**](https://t.me/StafiCha
 <br>
 
 ```
-cd~ && sudo wget https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/installstats.sh && sudo chmod +x installstats.sh && sudo ./installstats.sh
+cd~ && mkdir stafi-stats && cd stafi-stats && sudo wget https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/installstats.sh && sudo chmod +x installstats.sh && sudo ./installstats.sh
 ```
 <br>
