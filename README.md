@@ -42,7 +42,7 @@ For a full list of command type /help
 
 ## Step 2: Obtain Your Chat Identification Number
 
-Visit my dedicated telegram bot here [**@StafiChatIDBot**](https://t.me/StafiChatIDBot) for collecting your Chat ID that you will be asked for when you run installstats.sh in Step X.
+Visit my dedicated telegram bot here [**@StafiChatIDBot**](https://t.me/StafiChatIDBot) for collecting your Chat ID that you will be asked for when you run installstats.sh in Step 3 that follows.
 
 ## Step 3: Download & Setup The Scripts Required For Stafi Stats
 
@@ -57,6 +57,9 @@ sudo chmod +x installstats.sh
 sudo ./installstats.sh
 
 ```
+
+Now run this
+
 ```
 sudo wget https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/stats.sh
 sudo chmod +x stats.sh
@@ -72,4 +75,14 @@ sudo chmod +x telegramtest.sh
 sudo ./telegramtest.sh
 ```
 
+## Step 5
 
+To test the alerts system why not modify the config and set the alerts metrics to say 5 for the disk or cpu to almost guarantee it will alert you.  To do so
+
+sudo nano ~/stafi-stats/config.ini
+
+Once you have made the changes press Ctrl + X and then press Y to save.
+
+Now just wait for the next 5 minute cycle.  You should be alerted.
+
+Thats it! Now amend the config back to reasonable values and you're good to go.
