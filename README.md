@@ -65,6 +65,7 @@ Now run this
 ```
 wget https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/stats.sh
 sudo chmod +x stats.sh
+chown $USER:$USER stats.sh
 ```
 <br>
 
