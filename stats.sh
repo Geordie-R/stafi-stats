@@ -83,7 +83,7 @@ memory_max_percent="$(echo $memory_max_percent | tr -d '%' )"
 
  if (( memory_used_percent >= memory_max_percent ))
   then
-    mem_msg="❌ Memory is at $memory_used_percent which is over the threshold of $memory_max_percent"
+    mem_msg="❌ Memory is at $memory_used_percent"
     mem_alert=true
 else
 mem_msg="Memory is fine at $memory_used_percent percent used"
@@ -113,7 +113,7 @@ echo "$disk_msg"
 cpu_utilization=$((100 - $(vmstat 2 2 | tail -1 | awk '{print $15}' | sed 's/%//')))
 
 if [[ $cpu_utilization -gt $cpu_max_percent ]]; then
-cpu_msg="❌ CPU over $cpu_max_percent percent threshold at $cpu_utilization"
+cpu_msg="❌ CPU is over $cpu_max_percent percent"
 echo "$cpu_msg"
 cpu_alert=true
 else
@@ -152,7 +152,7 @@ echo "Stafi Block Height: $stafi_block_height - Your Block Height: $block_height
 block_diff=$(($stafi_block_height - $block_height))
 
 if [[ $block_diff -gt $block_diff_threshold ]]; then
-block_diff_msg="❌ Blck difference of $block_diff as STAFI: $stafi_block_height AND YOURS IS: $block_height
+block_diff_msg="❌ Block difference of $block_diff as STAFI: $stafi_block_height AND YOURS IS: $block_height
 "
 block_diff_alert=true
 else
@@ -173,7 +173,7 @@ alert=false
 if [[ "$system_version" == "$stafi_system_version" ]]; then
   version_msg="Same Version"
 else
-version_msg="Wrong Version: stafi is $stafi_system_version and yours is $system_version"
+version_msg="❌ Wrong Version: stafi is $stafi_system_version and yours is $system_version"
 version_alert=true
 fi
 
