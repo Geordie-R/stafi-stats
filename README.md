@@ -76,7 +76,7 @@ Test that your telegram bot is setup correctly by running the following
 ```
 wget https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/telegramtest.sh
 sudo chmod +x telegramtest.sh
-sudo ./telegramtest.sh
+./telegramtest.sh
 ```
 
 ## Step 5: Test Alerts
