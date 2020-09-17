@@ -83,10 +83,10 @@ memory_max_percent="$(echo $memory_max_percent | tr -d '%' )"
 
  if (( memory_used_percent >= memory_max_percent ))
   then
-    mem_msg="❌ Memory is at $memory_used_percent"
+    mem_msg="❌ Memory is at $memory_used_percent percent used"
     mem_alert=true
 else
-mem_msg="Memory is fine at $memory_used_percent percent used"
+mem_msg="Memory is fine at $memory_used_percent percent used percent used"
   fi
 
 #----------------------------------------------------------------------------------------------------#
@@ -113,7 +113,7 @@ echo "$disk_msg"
 cpu_utilization=$((100 - $(vmstat 2 2 | tail -1 | awk '{print $15}' | sed 's/%//')))
 
 if [[ $cpu_utilization -gt $cpu_max_percent ]]; then
-cpu_msg="❌ CPU is over $cpu_max_percent percent"
+cpu_msg="❌ CPU is at $cpu_utilization percent used"
 echo "$cpu_msg"
 cpu_alert=true
 else
