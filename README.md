@@ -54,7 +54,7 @@ Visit my dedicated telegram bot here [**@StafiChatIDBot**](https://t.me/StafiCha
 cd ~
 mkdir stafi-stats
 cd stafi-stats
-wget https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/installstats.sh
+wget -O installstats.sh https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/installstats.sh
 sudo chmod +x installstats.sh
 ./installstats.sh
 
@@ -63,7 +63,7 @@ sudo chmod +x installstats.sh
 Now run this
 
 ```
-wget https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/stats.sh
+wget -O stats.sh https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/stats.sh
 sudo chmod +x stats.sh
 chown $USER:$USER stats.sh
 ```
@@ -74,7 +74,7 @@ chown $USER:$USER stats.sh
 Test that your telegram bot is setup correctly by running the following.
 
 ```
-wget https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/telegramtest.sh
+wget -O telegramtest.sh https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/telegramtest.sh
 sudo chmod +x telegramtest.sh
 ./telegramtest.sh
 ```
