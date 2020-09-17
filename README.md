@@ -71,13 +71,15 @@ chown $USER:$USER stats.sh
 
 ## Step 4: Test Telegram
 
-Test that your telegram bot is setup correctly by running the following
+Test that your telegram bot is setup correctly by running the following.
 
 ```
 wget https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/telegramtest.sh
 sudo chmod +x telegramtest.sh
 ./telegramtest.sh
 ```
+
+Note: Anytime you want to run a telegram test in the future just run ~/stafi-stats/telegramtest.sh
 
 ## Step 5: Test Alerts
 
@@ -89,6 +91,10 @@ sudo nano ~/stafi-stats/config.ini
 
 Once you have made the changes press Ctrl + X and then press Y to save.
 
-Now just wait for the next 5 minute cycle.  You should be alerted.
+Now just wait for the next 5 minute cycle.  You should be alerted. Or, if you want to run it manually to bypass the schedule run the following
 
-Thats it! Now amend the config back to reasonable values and you're good to go.
+```
+~/stafi-stats/stats.sh
+```
+
+Thats it! Now amend the config back to reasonable values by repeating Step 5 and you're good to go.
