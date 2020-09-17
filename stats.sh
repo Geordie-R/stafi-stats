@@ -97,10 +97,10 @@ disk_max_percent="$(echo $disk_max_percent | tr -d '%' )"
 
  if (( disk_used_percent >= disk_max_percent ))
   then
-    disk_msg="❌ $disk_used_percent percent disk space used"
+    disk_msg="❌ Disk space is at $disk_used_percent percent used"
     disk_alert=true
 else
-disk_msg="$disk_used_percent percent disk space used which is OK"
+disk_msg="Disk space is at $disk_used_percent percent used which is OK"
   fi
 
 echo "$disk_msg"
