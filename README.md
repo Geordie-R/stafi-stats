@@ -58,9 +58,7 @@ wget -O installstats.sh https://raw.githubusercontent.com/Geordie-R/stafi-stats/
 sudo chmod +x installstats.sh && ./installstats.sh
 ```
 
-Now ./installstats.sh
-
-Now run this
+You will be asked a series of questions regarding the metrics.  Each answer will have a suggested answer.  Please type in your own answer to each question pressing enter after each one.  Once thats finished lets download the main stats.sh script below.
 
 ```
 wget -O stats.sh https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/stats.sh
