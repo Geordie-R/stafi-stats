@@ -55,10 +55,10 @@ cd ~
 mkdir stafi-stats
 cd stafi-stats
 wget -O installstats.sh https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/installstats.sh
-sudo chmod +x installstats.sh
-./installstats.sh
-
+sudo chmod +x installstats.sh && ./installstats.sh
 ```
+
+Now ./installstats.sh
 
 Now run this
 
