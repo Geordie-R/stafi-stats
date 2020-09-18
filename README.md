@@ -64,8 +64,7 @@ Now run this
 
 ```
 wget -O stats.sh https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/stats.sh
-sudo chmod +x stats.sh
-chown $USER:$USER stats.sh
+sudo chmod +x stats.sh && chown $USER:$USER stats.sh
 ```
 <br>
 
@@ -75,8 +74,7 @@ Test that your telegram bot is setup correctly by running the following.
 
 ```
 wget -O telegramtest.sh https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/telegramtest.sh
-sudo chmod +x telegramtest.sh
-./telegramtest.sh
+sudo chmod +x telegramtest.sh && ./telegramtest.sh
 ```
 
 Note: Anytime you want to run a telegram test in the future just run ~/stafi-stats/telegramtest.sh
