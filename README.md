@@ -1,4 +1,4 @@
-# stafi-stats beta
+# stafi-stats
 Stafi Stats is a script to produce node stats for the Stafi protocol. Every 5 minutes your node will run stats.sh script which will collect metrics and message you when there is something that needs attention.
 ## Features
 * Memory Used Percentage
