@@ -172,6 +172,10 @@ alert=false
 
 if [[ "$system_version" == "$stafi_system_version" ]]; then
   version_msg="Same Version"
+
+elif [[ "$stafi_system_version" == "" ]]; then
+version_msg="Stafi version unknown"
+  
 else
 version_msg="❌ Wrong Version: stafi is $stafi_system_version and yours is $system_version"
 version_alert=true
