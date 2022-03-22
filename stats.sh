@@ -28,6 +28,23 @@ function get_config_value(){
   fi
 }
 
+function ParseVersionNumber(){
+  vers=$(echo $1 | sed -n 1'p' | tr '-' '\n' | head -n 1)
+  echo  "$vers"
+}
+
+function IsFirstGreaterThanSecond(){
+if awk 'BEGIN{exit ARGV[2]>ARGV[1]}' "$1" "$2"
+then
+  echo "true"
+else
+  echo "false"
+fi
+
+
+}
+
+
 #----------------------------------------------------------------------------------------------------#
 # FILL PARAMETERS BELOW RETRIEVED FROM CONFIG.INI                                                    #
 #----------------------------------------------------------------------------------------------------#
@@ -166,24 +183,26 @@ echo "$block_diff_msg"
 
 system_version=$(curl -sH "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "system_version", "params":[]}' http://localhost:9933 | jq -r '.result')
 stafi_system_version=$(curl -sH "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "system_version", "params":[]}' $stafi_rpc_address | jq -r '.result')
+stafi_system_vers_numberonly=$(ParseVersionNumber "$stafi_system_version")
+system_version_numberonly=$(ParseVersionNumber "$system_version")
 
 echo "Stafi Version: $stafi_system_version -  Your System Version:$system_version"
 alert=false
+
+version_greater=$(IsFirstGreaterThanSecond "$stafi_system_vers_numberonly" "$system_version_numberonly")
+
 
 if [[ "$system_version" == "$stafi_system_version" ]]; then
   version_msg="Same Version"
 
 elif [[ "$stafi_system_version" == "" ]]; then
 version_msg="Stafi version unknown"
-  
-else
+
+elif [[ "$version_greater" == "true" ]]; then
 version_msg="❌ Wrong Version: stafi is $stafi_system_version and yours is $system_version"
 version_alert=true
+
 fi
-
-echo "$version_msg"
-
-
 
 msg=""
 if $mem_alert || $cpu_alert || $block_diff_alert || $disk_alert || $peer_alert || $version_alert
