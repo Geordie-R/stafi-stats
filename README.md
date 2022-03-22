@@ -94,3 +94,14 @@ Now just wait for the next 5 minute cycle.  You should be alerted. Or, if you wa
 ```
 
 Thats it! Now amend the config back to reasonable values by repeating Step 5 and you're good to go.
+
+## UPDATES --
+To quickly get up to date if you currently use stafi-stats first log in to the user which runs it, then run the following
+```
+cd ~
+mkdir stafi-stats
+cd stafi-stats
+rm stats.sh
+wget -O stats.sh https://raw.githubusercontent.com/Geordie-R/stafi-stats/master/stats.sh
+chmod +x stats.sh
+```
